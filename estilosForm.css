@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background: #5f2c82;
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu {
+  width: 900px;
+  margin: 0 auto;
+}
+img {
+  width: 100px;
+  height: 50px;
+  float: left;
+  padding: 8px;
+}
+nav {
+  float: right;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f3f0f0;
+  font-weight: bold;
+}
+nav ul li a::before {
+  display: block;
+  content: "";
+  width: 0%;
+  background: #f3f0f0;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  transition: width 0.2s;
+}
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  position: absolute;
+  padding-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f3f0f0;
+  width: 500px;
+  height: 550px;
+  border: 3px solid #fff;
+  border-radius: 22px;
+}
+
+.btn{
+  border: none; 
+  color: white; 
+  padding: 9px 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  background: linear-gradient(45deg, #49a09d, #5f2c82)
+}
+
+.botones
+{
+  padding-left:40%;
+}
+
+.formularios
+{
+  padding-top: 20px;
+}
+
+input {
+  position: relative;
+  margin: 10px;
+  margin-left: 10px;
+  width: 460px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+input::placeholder
+{
+ text-align: center; 
+ line-height: 100px;
+}
+
+.divBtn
+{
+  padding-top: 10%;
+  padding-left:3%;
+}
+.btnEnviar
+{
+  width: 460px;
+  height: 50px;
+  font-size: 20px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+}
+
+#id 
+{
+  display:  none;
+}
+
+#nombre{
+  display: block;
+}
+
+#unidades{
+  display: block;
+}
+
+#preUnidades{
+  display: block;
+}
+
+
+
+

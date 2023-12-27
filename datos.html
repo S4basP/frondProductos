@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilosForm.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="./imagenes/logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Operaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 class="titulo" id = "titulo">Agregar</h1>
+      <div class="botones">
+        <button class="btn" id = "btnEliminar">Eliminar</button>
+        <button class="btn" id = "btnActualizar">Actualizar</button>
+        <button class="btn" id = "btnAgregar">Agregar</button>
+      </div>
+      
+      <div class="formularios">
+        <input type="text" id="id" placeholder="ID" />
+        <input type="text" id="nombre" placeholder="NOMBRE" />
+        <input type="text" id="unidades" placeholder="UNIDADES" />
+        <input type="text" id="preUnidades" placeholder="PRECIO POR UNIDAD" />
+        <div class="divBtn"><button class="btn btnEnviar" id = "btnEvento">Agregar</button></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>

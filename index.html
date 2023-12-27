@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="./imagenes/logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="datos.html">Operaciones</a></li>
+            <li><a id="generarReporte" download="Reporte.csv" href="#">Generar Reporte</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <table id = "datatable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>UNIDADES</th>
+            <th>PRECIO POR UNIDAD</th>
+            <th>FECHA DE REGISTRO</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/excellentexport@3.4.3/dist/excellentexport.min.js"></script>
+    <script src="./tablas.js" type="module"></script>
+  </body>
+</html>
